@@ -1,0 +1,9 @@
+nodemon ./src/index.js 8080 FORK
+nodemon ./src/index.js 8080 CLUSTER
+pm2 start ./src/index.js --watch
+pm2 start ./src/index.js -i max --watch
+pm2 delete all
+
+creacion de cluster en puerto 8081:
+nodemon ./src/index.js 8081 CLUSTER
+
